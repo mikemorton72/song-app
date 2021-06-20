@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+100.times do
+  Song.create(
+    title: Faker::Music::PearlJam.song,
+    album: Faker::Music::PearlJam.album,
+    artist: Faker::Music::PearlJam.musician,
+    year: "1990"
+  )
+end
